@@ -1,0 +1,15 @@
+artifact_uri: file:///home/shiva/Documents/MLOPS/mlops-demo/mlruns/0/6695c3c17db04ea38a8ed9228aa33b07/artifacts
+end_time: 1704097014213
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6695c3c17db04ea38a8ed9228aa33b07
+run_name: resilient-mare-484
+run_uuid: 6695c3c17db04ea38a8ed9228aa33b07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704097010753
+status: 3
+tags: []
+user_id: shiva
