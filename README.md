@@ -4,37 +4,38 @@
 ## Workflows
 
 1. Update config.yaml
-    # Remains inside config directory.
-    # Use to create all the artifacts like downloading, extracting, train-test split, validation status, evaluation metrics.
-    # Define all the value such as url, storing path, loading path etc.
-    # These value can be mapped using config_entity which later can be access from related components.
+    - Remains inside config directory.
+    - Use to create all the artifacts like downloading, extracting, train-test split, validation status, evaluation metrics.
+    - Define all the value such as url, storing path, loading path etc.
+    - These value can be mapped using config_entity which later can be access from related components.
 
 2. Update schema.yaml
-    # Remains at root directory.
-    # Used to validate the schema of our data by verifying the list of columns that are used to build the model.
-    # Any changes to our data such as adding new column or removing old columns results to schema validation fail.
+    - Remains at root directory.
+    - Used to validate the schema of our data by verifying the list of columns that are used to build the model.
+    - Any changes to our data such as adding new column or removing old columns results to schema validation fail.
 
 3. Update params.yaml
-    # Remains inside config directory.
-    # Use to setup parameters for our model in this file.
-    # Makes us easy to compare between different values of parameters.
+    - Remains inside config directory.
+    - Use to setup parameters for our model in this file.
+    - Makes us easy to compare between different values of parameters.
 
 4. Update the entity
-    # Remains inside entity directory which is named as cofing_entity.
-    # These config_entity maps all the values from config.yaml
-    # We have to map with same name in both config.yaml and inside config_entity @dataclass
+    - Remains inside entity directory which is named as cofing_entity.
+    - These config_entity maps all the values from config.yaml
+    - We have to map with same name in both config.yaml and inside config_entity @dataclass
 
 5. Update the configuration manager in src config
-    # Remains inside src/mlops_demo/config
-    # Define functions that are used to get data from config.yaml using config_entity.
-    # Returns respective config_entity such as DataIngestionConfig, DataValidationConfig etc.
+    - Remains inside src/mlops_demo/config
+    - Define functions that are used to get data from config.yaml using config_entity.
+    - Returns respective config_entity such as DataIngestionConfig, DataValidationConfig etc.
 
 6. Update the components
-    # Remains inside src/mlops_demo/components.
-    # Use to create all the required components that work on specific task.
-
+    - Remains inside src/mlops_demo/components.
+    - Use to create all the required components that work on specific task.
 7. Update the pipeline 
-    # 
+    - Remains inside src/mlops-demo/pipeline.
+    - Use to automate all the components seamlessly.
+    - 
 8. Update the main.py
 9. Update the app.py
 
